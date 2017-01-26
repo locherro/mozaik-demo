@@ -13,8 +13,7 @@ const ConfigActions   = Mozaik.Actions.Config;
 Mozaik.Registry.addExtensions({
     github,
     travis,
-    time,
-    weather
+    time
 });
 
 React.render(<MozaikComponent/>, document.getElementById('mozaik'));
