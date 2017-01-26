@@ -8,6 +8,6 @@ const mozaik = new Mozaik(config);
 
 mozaik.bus.registerApi('github',  github);
 mozaik.bus.registerApi('travis',  travis);
-mozaik.bus.registerApi('weather', weather);
+//mozaik.bus.registerApi('weather', weather);
 
 mozaik.startServer();
