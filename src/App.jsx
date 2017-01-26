@@ -14,7 +14,7 @@ Mozaik.Registry.addExtensions({
     github,
     travis,
     time,
-    weather
+//    weather
 });
 
 React.render(<MozaikComponent/>, document.getElementById('mozaik'));
