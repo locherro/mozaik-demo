@@ -76,15 +76,15 @@ var config = {
                     columns: 1, rows: 1,
                     x: 3, y: 0
                 },
-                {
-                    type: 'weather.weather',
-                    city: 'Tokyo',
-                    country: 'JP',
-                    lang: 'en',
-                    limit: 2,
-                    columns: 1, rows: 1,
-                    x: 0, y: 1
-                },
+                // {
+                //     type: 'weather.weather',
+                //     city: 'Tokyo',
+                //     country: 'JP',
+                //     lang: 'en',
+                //     limit: 2,
+                //     columns: 1, rows: 1,
+                //     x: 0, y: 1
+                // },
                 {
                     type: 'travis.build_history',
                     owner: 'plouc',
