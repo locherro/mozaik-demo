@@ -1,42 +1,74 @@
 {
-	"version": 1,
-	"allow_edit": true,
-	"plugins": [],
-	"panes": [
+  "version": 1,
+  "allow_edit": true,
+  "plugins": [],
+  "panes": [
+	{
+	  "width": 1,
+	  "row": {
+		"3": 1
+	  },
+	  "col": {
+		"3": 1
+	  },
+	  "col_width": 1,
+	  "widgets": [
 		{
-			"width": 1,
-			"row": {
-				"3": 1
-			},
-			"col": {
-				"3": 1
-			},
-			"col_width": 1,
-			"widgets": [
-				{
-					"type": "gauge",
-					"settings": {
-						"title": "Aktive User",
-						"value": "datasources[\"GA - Aktive User\"][\"value\"]",
-						"units": "User",
-						"min_value": 0,
-						"max_value": "10"
-					}
-				}
-			]
+		  "type": "gauge",
+		  "settings": {
+			"title": "Aktive User",
+			"value": "datasources[\"GA - Aktive User\"][\"value\"]",
+			"units": "User",
+			"min_value": 0,
+			"max_value": "10"
+		  }
 		}
-	],
-	"datasources": [
+	  ]
+	},
+	{
+	  "width": 1,
+	  "row": {
+		"3": 1
+	  },
+	  "col": {
+		"3": 2
+	  },
+	  "col_width": 1,
+	  "widgets": [
 		{
-			"name": "GA - Aktive User",
-			"type": "JSON",
-			"settings": {
-				"url": "http://localhost:8888/shipitday/ProfiGit/datastreams/google-active-users.php",
-				"use_thingproxy": false,
-				"refresh": 1,
-				"method": "GET"
-			}
+		  "type": "gauge",
+		  "settings": {
+			"title": "Uptime",
+			"value": "datasources[\"Status Cake\"][\"Uptime\"]",
+			"units": "%",
+			"min_value": 0,
+			"max_value": 100
+		  }
 		}
-	],
-	"columns": 3
+	  ]
+	}
+  ],
+  "datasources": [
+	{
+	  "name": "GA - Aktive User",
+	  "type": "JSON",
+	  "settings": {
+		"url": "http://localhost:8888/shipitday/ProfiGit/datastreams/google-active-users.php",
+		"use_thingproxy": false,
+		"refresh": 1,
+		"method": "GET"
+	  }
+	},
+	{
+	  "name": "Status Cake",
+	  "type": "JSON",
+	  "settings": {
+		"url": "https://www.statuscake.com/API/Tests/Details?TestID=1833527&Username=locherro&API=qptm8z0iG446AVwV90n7",
+		"use_thingproxy": true,
+		"refresh": 1,
+		"method": "GET"
+	  }
+	}
+  ],
+  "columns": 3
 }
