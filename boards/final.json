@@ -1,0 +1,42 @@
+{
+	"version": 1,
+	"allow_edit": true,
+	"plugins": [],
+	"panes": [
+		{
+			"width": 1,
+			"row": {
+				"3": 1
+			},
+			"col": {
+				"3": 1
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "gauge",
+					"settings": {
+						"title": "Aktive User",
+						"value": "datasources[\"GA - Aktive User\"][\"value\"]",
+						"units": "User",
+						"min_value": 0,
+						"max_value": "10"
+					}
+				}
+			]
+		}
+	],
+	"datasources": [
+		{
+			"name": "GA - Aktive User",
+			"type": "JSON",
+			"settings": {
+				"url": "http://localhost:8888/shipitday/ProfiGit/datastreams/google-active-users.php",
+				"use_thingproxy": false,
+				"refresh": 1,
+				"method": "GET"
+			}
+		}
+	],
+	"columns": 3
+}
